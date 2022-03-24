@@ -6,13 +6,19 @@ require 'dad_jokes'
 require 'dotenv'
 
 bot = Discordrb::Commands::CommandBot.new token: ENV['TOKEN'], prefix: 'r.'
-
 puts "Link de convite: #{bot.invite_url}.".colorize(:red)
 puts "bot ligado com sucesso XD".colorize(:blue)
 
 ## bot commands
 bot.mention do |event|
   event.respond 'Hi ' + event.user.name + ' im ricchie my prefix: r.'
+end
+
+bot.command :botinfo do |event|
+	event.respond 'Name: Ricchie
+	ID: 955215978101350440
+	Owner: NillyTheLOL#5363
+	OwnerID: 825888178274959390'
 end
 
 bot.command :joke do |event|
