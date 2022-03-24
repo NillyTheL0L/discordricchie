@@ -35,7 +35,8 @@ bot.command :help do |event|
 	r.invite
 	r.search
 	r.randomnum
-	r.joke'
+	r.joke
+	r.botinfo'
 end
 
 bot.command :bold do |_event, *args|
