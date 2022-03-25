@@ -1,8 +1,12 @@
 require "net/http"
 require "uri"
+## principal gem
 require 'discordrb'
+## gem opcional para cores no debug
 require 'colorize'
+## gem para o comando r.joke
 require 'dad_jokes'
+## gem para guardar a env do token
 require 'dotenv'
 
 bot = Discordrb::Commands::CommandBot.new token: ENV['TOKEN'], prefix: 'r.'
@@ -37,6 +41,15 @@ bot.command :help do |event|
 	r.randomnum
 	r.joke
 	r.botinfo'
+end
+
+bot.command :embed do |builder|
+  builder.content = 'Hello world!'
+  builder.add_embed do |embed|
+    embed.title = 'Embed title'
+    embed.description = 'Embed description'
+    embed.timestamp = Time.now
+	end
 end
 
 bot.command :bold do |_event, *args|
@@ -90,5 +103,5 @@ end
 #end
 
 
-bot.send_message(956628701594939433, 'Im now online :sunglasses:')
+bot.send_message(956628701594939433, 'UptimeRobot me olhou agora :sunglasses:')
 bot.run
