@@ -1,3 +1,27 @@
+#################################################
+############### CHAT ###########################
+## This chat is for talking with my contribuito
+## mall mark is in brazilian portuguese please translate
+################################################
+## oi cep to procurando apis
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+##
+################################################
+
 require "net/http"
 require "uri"
 ## principal gem
