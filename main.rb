@@ -32,6 +32,11 @@ require 'colorize'
 require 'dad_jokes'
 ## gem para guardar a env do token
 require 'dotenv'
+require 'figlet'
+require 'artii'
+require 'asciimeme'
+require 'cowsay'
+
 
 bot = Discordrb::Commands::CommandBot.new token: ENV['TOKEN'], prefix: 'r.'
 puts "Link de convite: #{bot.invite_url}.".colorize(:red)
@@ -86,6 +91,10 @@ end
 
 bot.command :italic do |_event, *args|
   "*#{args.join(' ')}*"
+end
+
+bot.command :cowsay do |_event, *args|
+	event.respond Cowsay.say('#{args.join(' ')}', 'cow')
 end
 
 bot.command(:off, help_available: false) do |event|

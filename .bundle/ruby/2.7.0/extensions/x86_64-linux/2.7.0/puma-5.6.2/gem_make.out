@@ -1,0 +1,20 @@
+current directory: /home/runner/discordricchie/.bundle/ruby/2.7.0/gems/puma-5.6.2/ext/puma_http11
+/nix/store/yfmnyvd0asw5bs24lg611xn2gi4prqla-ruby-2.7.4/bin/ruby -I /nix/store/yfmnyvd0asw5bs24lg611xn2gi4prqla-ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20220325-2298-gglf9.rb extconf.rb
+checking for BIO_read() in -lcrypto... no
+checking for BIO_read() in -llibeay32... no
+** Puma will be compiled without SSL support
+creating Makefile
+
+current directory: /home/runner/discordricchie/.bundle/ruby/2.7.0/gems/puma-5.6.2/ext/puma_http11
+make DESTDIR\= clean
+
+current directory: /home/runner/discordricchie/.bundle/ruby/2.7.0/gems/puma-5.6.2/ext/puma_http11
+make DESTDIR\=
+compiling http11_parser.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.so
+
+current directory: /home/runner/discordricchie/.bundle/ruby/2.7.0/gems/puma-5.6.2/ext/puma_http11
+make DESTDIR\= install
+/nix/store/1570w56jrkvr90w9x158vyb5vahnk18v-coreutils-8.32/bin/install -c -m 0755 puma_http11.so ./.gem.20220325-2298-nrveua/puma

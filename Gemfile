@@ -12,3 +12,8 @@ gem 'mamajoke'
 gem 'dad_jokes'
 gem 'dotenv'
 gem "jewelrystore"
+gem 'figlet'
+gem 'artii'
+gem 'lita-ascii-art' 
+gem 'asciimeme'
+gem 'cowsay'
